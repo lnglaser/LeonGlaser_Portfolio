@@ -38,7 +38,7 @@ export default {
       },
       {
         "id": "3",
-        "tile": "Kohi",
+        "title": "Kohi",
         "description": "A marketplace app built around independent coffee roasters, allowing them to list and market their blends.",
         "link": "https://protected-escarpment-45651.herokuapp.com/"
       }

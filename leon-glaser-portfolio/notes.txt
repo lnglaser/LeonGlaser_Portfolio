@@ -1,0 +1,7 @@
+https://www.cssscript.com/book-page-flip-animation/
+
+Idea - portfolio site resembles a comic book, with different sections broken into pages and panels.
+
+Cover - Name, basic about me
+
+Pages - projects, resume, contact form
