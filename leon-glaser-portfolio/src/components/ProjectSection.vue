@@ -5,7 +5,8 @@
     <div :key="project.id" v-for="project in projects">
         <h3>{{ project.title }}</h3>
         <p>{{ project.description }}</p>
-        <a href={{project.link}}>Link</a>
+        <a href src={{project.link}}>Link</a>
+
     </div>
 </template>
 
@@ -15,11 +16,15 @@ export default {
     name: 'ProjectSection',
     props: {
         msg: String,
-        projects: Array
+        projects: Array,
+        description: String,
+        projectName: String,
+        projectLink: String
     }
 }
 
 </script>
 
 <style>
+
 </style>

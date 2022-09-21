@@ -1,6 +1,6 @@
 <template>
     <div>
-
+        <h3>{{label}}</h3>
         <p>{{ msg }}</p>
     </div>
 
@@ -10,10 +10,12 @@
 export default {
     name: 'AboutMe',
     props: {
+        label: String,
         msg: String
     }
 }
 </script>
 
 <style>
+
 </style>

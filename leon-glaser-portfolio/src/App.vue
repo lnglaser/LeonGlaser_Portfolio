@@ -5,13 +5,16 @@
   <AboutMe
     msg="I'm a developer who branched from writing stories to making software. In both disciplines, I maintain my approach by impacting people's lives in a meaningful way." />
 
-  <ProjectSection msg="A sampling of projects I've created or contributed to." :projects="projects" />
+  <ProjectSection msg="A sampling of projects I've created or contributed to." :key="project" :projects="projects" />
+  <ProjectHighlight :v-for="project in projects"></ProjectHighlight>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import AboutMe from './components/AboutMe.vue'
 import ProjectSection from './components/ProjectSection.vue';
+import ProjectHighlight from './components/ProjectHighlight.vue';
+
 
 
 export default {
@@ -19,7 +22,9 @@ export default {
   components: {
     // HelloWorld,
     AboutMe,
-    ProjectSection
+    ProjectSection,
+    ProjectHighlight,
+
   },
   data: () => ({
     projects: [
